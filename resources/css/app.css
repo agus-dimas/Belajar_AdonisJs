@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS kustom kamu di sini */
 * {
   margin: 0;
   padding: 0;
