@@ -11,7 +11,6 @@ import router from '@adonisjs/core/services/router'
 
 router.on('/').render('pages/home')
 
-// router.post(/dashboard).render('pages/dashboard')
-router.get('/dashboard', async (ctx) => {
-  return ctx.view.render('pages/dashboard')
+router.get('/movie', async (ctx) => {
+  return ctx.view.render('pages/movie',{ movie:'my awesome movie'})
 })

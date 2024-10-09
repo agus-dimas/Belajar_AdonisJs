@@ -6,7 +6,7 @@ import tailwindcss from 'tailwindcss';
 export default defineConfig({
   plugins: [
     adonisjs({
-      entrypoints: ['resources/js/app.js', ],
+      entrypoints: ['resources/js/app.js'],
       reload: ['resources/views/**/*.edge'],
     }),
   ],
