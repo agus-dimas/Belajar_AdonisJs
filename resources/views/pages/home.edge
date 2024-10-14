@@ -8,11 +8,13 @@
 </head>
 <body>
 
-    <nav>
-      <a href="/">home</a>
-      <a href="/movie">movie</a>
+  <nav>
+    <a href="{{ route('home')}}">home</a>
+    <a href="{{ route('movies.show',{slug:'my-awesome-movie'})}}">my-awesome-movie</a>
+    <a href="{{ route('movies.show',{slug:'another-awesome-movie'})}}">another-awesome-movie</a>
 
-    </nav>
+  </nav>
+
     <h1 class="">
       It's works!
     </h1>
