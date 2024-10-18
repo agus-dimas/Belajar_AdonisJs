@@ -7,20 +7,20 @@
     @vite(['resources/js/app.js'])
 </head>
 <body>
+  <div class="max-w-3xl mx-auto mt-6">
+    <nav>
+      <a href="{{ route('home')}}">home</a>
+      <a href="{{ route('movies.show',{slug:'my-awesome-movie'})}}">my-awesome-movie</a>
+      <a href="{{ route('movies.show',{slug:'another-awesome-movie'})}}">another-awesome-movie</a>
 
-  <nav>
-    <a href="{{ route('home')}}">home</a>
-    <a href="{{ route('movies.show',{slug:'my-awesome-movie'})}}">my-awesome-movie</a>
-    <a href="{{ route('movies.show',{slug:'another-awesome-movie'})}}">another-awesome-movie</a>
+    </nav>
 
-  </nav>
-
-    <h1 class="">
-      It's works!
-    </h1>
-    <div class="text-black-500 bg-blue-500">
-      test tailwind
-    </div>
+      <h1 class="">
+        It's works!
+      </h1>
+      <div class="text-black-500 bg-blue-500">
+        test tailwind
+      </div>
   </div>
 </body>
 </html>

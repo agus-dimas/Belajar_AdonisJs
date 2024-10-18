@@ -16,7 +16,7 @@ router.on('/').render('pages/home').as('home')
 
 router.get('/movies/:slug', async (ctx) => {
 
-  const url = app.makeURL(`resources/movies/${ctx.params.slug}.html`)
+  const url = app.makeURL(`resources/movies/${ctx.params.slug}.md`)
 
   try{
 
